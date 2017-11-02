@@ -197,7 +197,7 @@ class Header extends React.Component {
 
         let tradeLink = this.props.lastMarket ?
             <a className={cnames({active: active.indexOf("market/") !== -1})} onClick={this._onNavigate.bind(this, `/market/${this.props.lastMarket}`)}><Translate component="span" content="header.exchange" /></a>:
-            <a className={cnames({active: active.indexOf("market/") !== -1})} onClick={this._onNavigate.bind(this, "/market/USD_BTS")}><Translate component="span" content="header.exchange" /></a>;
+            <a className={cnames({active: active.indexOf("market/") !== -1})} onClick={this._onNavigate.bind(this, "/market/BTSVIP.OTC_BTSVIP.CNY")}><Translate component="span" content="header.exchange" /></a>;
 
         // Account selector: Only active inside the exchange
         let accountsDropDown = null, account_display_name, accountsList;
@@ -324,7 +324,7 @@ class Header extends React.Component {
                         <li>{dashboard}</li>
                         {!currentAccount ? null : <li style={{display: 'none'}}><Link to={`/account/${currentAccount}/overview`} className={cnames({active: active.indexOf("account/") !== -1})}><Translate content="header.account" /></Link></li>}
                         {currentAccount || myAccounts.length ? <li style={{display: 'none'}}><a className={cnames({active: active.indexOf("transfer") !== -1})} onClick={this._onNavigate.bind(this, "/transfer")}><Translate component="span" content="header.payments" /></a></li> : null}
-                        {!(currentAccount || myAccounts.length) ? <li><a className={cnames({active: active.indexOf("explorer") !== -1})} onClick={this._onNavigate.bind(this, "/explorer")}><Translate component="span" content="header.explorer" /></a></li> : null}
+                        {/*{!(currentAccount || myAccounts.length) ? <li><a className={cnames({active: active.indexOf("explorer") !== -1})} onClick={this._onNavigate.bind(this, "/explorer")}><Translate component="span" content="header.explorer" /></a></li> : null}*/}
                         <li>{tradeLink}</li>
                         {enableDepositWithdraw && currentAccount && myAccounts.indexOf(currentAccount) !== -1 ? <li><Link to={"/account/"+currentAccount+"/deposit-withdraw/"} activeClassName="active"><Translate content="account.deposit_withdraw"/></Link></li> : <li><Link to={"/deposit-withdraw/"} activeClassName="active"><Translate content="account.deposit_withdraw"/></Link></li>}
                         <li><a href="http://info.muse.help" target="_blank">MUSE资讯</a></li>

@@ -49,12 +49,13 @@ module.exports = function(env) {
 
     // OUTPUT PATH
     var outputPath = path.join(root_dir, "assets");
-
+    // console.log(JSON.stringify(git.tag()))
     // COMMON PLUGINS
     var plugins = [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin({
-            APP_VERSION: '1',//JSON.stringify(git.tag()),
+            APP_VERSION: JSON.stringify(git.tag()),
+            //APP_VERSION: "4c00aead56294628eb98c67b5c2fc162cb323052",//JSON.stringify(git.tag()),
             __ELECTRON__: !!env.electron,
             __HASH_HISTORY__: !!env.hash,
             __BASE_URL__: JSON.stringify("baseUrl" in env ? env.baseUrl : "/"),

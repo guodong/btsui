@@ -335,7 +335,10 @@ function BindToChainState(Component, options = {}) {
         render() {
             const props = omit(this.props, this.all_chain_props);
 
-            //console.log("----- Wrapper render ----->", this.componentName(), this.props, this.state);
+            // console.log("----- Wrapper render ----->", this.componentName(), this.props, this.state);
+            if (this.componentName() == "AccountDepositWithdraw") {
+                return <Component ref="bound_component" {...props} {...this.state}/>;
+            }
             for (let prop of this.required_props)  {
                 if(!this.state[prop]) {
                     if (typeof options !== "undefined" && options.show_loader) {
@@ -343,7 +346,7 @@ function BindToChainState(Component, options = {}) {
                     } else {
                         // returning a temp component of the desired type prevents invariant violation errors, notably when rendering tr components
                         // to use, specicy a defaultProps field of tempComponent: "tr" (or "div", "td", etc as desired)
-                        return this.tempComponent ? React.createElement(this.tempComponent) : <span></span>;
+                        return this.tempComponent ? React.createElement(this.tempComponent) : <span>1</span>;
                     }
                 }
             }

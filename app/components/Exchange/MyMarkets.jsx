@@ -662,9 +662,9 @@ class MyMarkets extends React.Component {
                     <div ref="myMarkets" className={starClass} onClick={this._changeTab.bind(this, "my-market")}>
                         <Translate content="exchange.market_name" />
                     </div>
-                    <div className={allClass} onClick={this._changeTab.bind(this, "find-market")} >
-                        <Translate content="exchange.more" />
-                    </div>
+                    {/*<div className={allClass} onClick={this._changeTab.bind(this, "find-market")} >*/}
+                        {/*<Translate content="exchange.more" />*/}
+                    {/*</div>*/}
                 </div>
 
                 {this.props.controls ? (
@@ -675,21 +675,21 @@ class MyMarkets extends React.Component {
 
                 {myMarketTab ?
                     <div className="grid-block shrink" style={{width: "100%", textAlign: "left", padding: "0.75rem 0.5rem"}}>
-                        <label className="no-margin">
-                            <input style={{position: "relative", top: 3}} className="no-margin" type="checkbox" checked={this.props.onlyStars} onChange={() => {MarketsActions.toggleStars();}}/>
-                            <span>&nbsp;<Translate content="exchange.show_star_1" /><Icon className="gold-star" name="fi-star"/> <Translate content="exchange.show_star_2" /></span>
-                        </label>
-                        <div className="float-right" style={{paddingLeft: 20}}>
-                        <input
-                            style={{fontSize: "0.9rem", height: "inherit", position: "relative", top: 1, padding: 2}}
-                            className="no-margin"
-                            type="text"
-                            placeholder="Filter"
-                            maxLength="16"
-                            value={this.state.myMarketFilter}
-                            onChange={(e) => {this.setState({myMarketFilter: e.target.value && e.target.value.toUpperCase()});}}
-                        />
-                        </div>
+                        {/*<label className="no-margin">*/}
+                            {/*<input style={{position: "relative", top: 3}} className="no-margin" type="checkbox" checked={this.props.onlyStars} onChange={() => {MarketsActions.toggleStars();}}/>*/}
+                            {/*<span>&nbsp;<Translate content="exchange.show_star_1" /><Icon className="gold-star" name="fi-star"/> <Translate content="exchange.show_star_2" /></span>*/}
+                        {/*</label>*/}
+                        {/*<div className="float-right" style={{paddingLeft: 20}}>*/}
+                        {/*<input*/}
+                            {/*style={{fontSize: "0.9rem", height: "inherit", position: "relative", top: 1, padding: 2}}*/}
+                            {/*className="no-margin"*/}
+                            {/*type="text"*/}
+                            {/*placeholder="Filter"*/}
+                            {/*maxLength="16"*/}
+                            {/*value={this.state.myMarketFilter}*/}
+                            {/*onChange={(e) => {this.setState({myMarketFilter: e.target.value && e.target.value.toUpperCase()});}}*/}
+                        {/*/>*/}
+                        {/*</div>*/}
 
                     </div> :
 
