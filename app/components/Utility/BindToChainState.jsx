@@ -346,7 +346,7 @@ function BindToChainState(Component, options = {}) {
                     } else {
                         // returning a temp component of the desired type prevents invariant violation errors, notably when rendering tr components
                         // to use, specicy a defaultProps field of tempComponent: "tr" (or "div", "td", etc as desired)
-                        return this.tempComponent ? React.createElement(this.tempComponent) : <span>1</span>;
+                        return this.tempComponent ? React.createElement(this.tempComponent) : <span></span>;
                     }
                 }
             }

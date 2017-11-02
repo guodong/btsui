@@ -145,7 +145,7 @@ class MarketHistory extends React.Component {
                         </td>
                         <td>{parsed_order.receives}</td>
                         <td>{parsed_order.pays}</td>
-                        <td data-tip={new Date(order.time)}>{parsed_order.time}</td>
+                        <td data-tip={new Date(order.time)}>{order.time}</td>
                     </tr>
                 );
             }).toArray();
