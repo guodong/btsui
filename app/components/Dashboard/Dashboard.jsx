@@ -18,7 +18,8 @@ class Dashboard extends React.Component {
         let marketsByChain = {
             "4018d784":[
                 ["BTSVIP.CNY", "BTSVIP.OTC"],
-                ["BTSVIP.CNY", "BTSVIP.MUSE"]
+                ["BTSVIP.CNY", "BTSVIP.MUSE"],
+                ["BTS", "BTSVIP.CNY"]
                 // ["USD", "BTS"],
                 // ["USD", "OPEN.BTC"],
                 // ["USD", "OPEN.USDT"],

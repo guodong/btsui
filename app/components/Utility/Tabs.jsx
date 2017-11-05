@@ -151,7 +151,7 @@ class Tabs extends React.Component {
 
         return (
             <div className={cnames(!!this.props.actionButtons ? "with-buttons" : "", this.props.className)}>
-                <div className="service-selector">
+                <div className="service-selector" style={{display: "none"}}>
 
                     <ul style={style} className={cnames("button-group no-margin", tabsClass, {segmented})}>
                         {collapseTabs ?
