@@ -54,12 +54,6 @@ export default class LoginSelector extends React.Component {
                             </label>
                         </div>}
 
-                        {!!childCount ? null :
-                        <div className="creation-options">
-                            <div><Link to="/wallet/backup/restore"><Translate content="account.restore" /></Link></div>
-                            <div><Link to="/create-account/wallet"><Translate content="account.advanced" /></Link></div>
-                        </div>}
-
                         {this.props.children}
                     </div>
                 {/* <div className="grid-block no-margin no-padding vertical medium-horizontal no-overflow login-selector">

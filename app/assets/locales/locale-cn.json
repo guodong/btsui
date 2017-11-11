@@ -63,10 +63,12 @@
       "memo_tip": "You may include any message in the memo field. Memos are optional but generally required for transfers to exchanges."
   },
   "account": {
+    "new_user": "新用户",
+    "existing_user": "已有账户",
     "deposit_address": "你的充值地址就是你的账户名",
     "qty": "数量",
     "intro_text_title": "欢迎来到比特股去中心化交易所！",
-    "intro_text_1": "<b>比特股2.0</b>是一个基于区块链构建的去中心化交易所，该交易所通称DEX, DEX有着工业级的业务处理能力，能够永不停歇地提供公正和透明的服务，这里有比特股首创的bitCNY,bitUSD等智能货币，用户可以在这里根据自己的需要.",
+    "intro_text_1": "比特股2.0是一个基于区块链技术构建的去中心化交易所，该交易所通称为bitshares DEX, DEX有着工业级的业务处理能力，能够永不停歇地提供公正和透明的服务，用户可以在这里进行24小时不间歇的交易而不用担心交易所被关闭或遭遇黑幕。",
     "intro_text_2": "发行用户定义资产（UIA）,也可以买卖通用的数字资产如BTC, ETH等。",
     "intro_text_3": "来比特股尽情享受交易的乐趣吧！",
     "intro_text_4": "<br/>官网：&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' rel='noopener noreferrer' href='https://bitshares.org'>https://bitshares.org</a><br/>论坛：&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' rel='noopener noreferrer' href='https://bitsharestalk.org'>https://bitsharestalk.org</a><br/>QQ群：&nbsp;&nbsp;423951676<br/>Github：<a target='_blank' rel='noopener noreferrer' href='https://github.com/bitshares/bitshares-core'>https://github.com/bitshares/bitshares-core</a>",

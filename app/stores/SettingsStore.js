@@ -63,6 +63,7 @@ class SettingsStore {
             apiServer: [],
             unit: [
                 CORE_ASSET,
+                "BTSVIP.CNY",
                 "USD",
                 "CNY",
                 "BTC",

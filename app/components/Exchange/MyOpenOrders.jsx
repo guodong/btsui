@@ -18,7 +18,7 @@ class TableHeader extends React.Component {
 
     render() {
         let {baseSymbol, quoteSymbol, dashboard, isMyAccount, settings} = this.props;
-        let preferredUnit = settings ? settings.get("unit") : "1.3.0";
+        let preferredUnit = "BTSVIP.BTC"; //settings ? settings.get("unit") : "1.3.0";
 
         return !dashboard ? (
             <thead>
@@ -36,8 +36,8 @@ class TableHeader extends React.Component {
                     <th colSpan="3"><Translate content="account.bts_market" /></th>
                     <th style={rightAlign}><Translate content="exchange.price" /></th>
                     <th style={rightAlign}><Translate content="account.qty" /></th>
-                    <th style={rightAlign}><Translate content="exchange.total" /></th>
-                    <th><Translate content="exchange.order_value" /> (<AssetName name={preferredUnit} />)</th>
+                    <th style={rightAlign}>金额</th>
+                    <th>最近成交价 (<AssetName name={preferredUnit} />)</th>
                     <th><Translate content="account.trade" /></th>
                     {/* <th><Translate content="transaction.expiration" /></th> */}
                     {isMyAccount ? <th><Translate content="wallet.cancel" /></th> : null}

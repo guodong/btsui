@@ -257,14 +257,19 @@ class AccountDepositWithdraw extends React.Component {
         const currentServiceName = serviceNames[activeService];
         const currentServiceDown = servicesDown.get(currentServiceName);
 
+      var avatar1 = require("assets/avatar1.png")
+      var avatar2 = require("assets/avatar2.png")
+      var avatar3 = require("assets/avatar3.png")
+      var avatar4 = require("assets/avatar4.png")
+      var avatar5 = require("assets/avatar5.png")
         return (
             <div className={this.props.contained ? "grid-content" : "grid-container"}>
                 <h2 style={{paddingLeft: "20px"}}>BTSVIP第三方承兑商</h2>
                 <div style={{float: "left", margin: "10px 20px", border: "1px solid rgb(187, 187, 187)", width: "300px", fontSize: "14px"}}>
                     <div style={{padding: "10px", fontSize: "14px"}}><img
-                        src="https://www.hellobts.com/static/image/dz-header.jpg" width="50px" height="50px"
-                        style={{float: "left"}}/>
-                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>西北矿主<span style={{float: "right", color: "red"}}>保证金20万元</span></div>
+                        src={avatar1} width="50px" height="50px"
+                        style={{float: "left", width: "50px", height: "50px"}}/>
+                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>西北矿主<span style={{float: "right", color: "red"}}>保证金60万元</span></div>
                             <div style={{display: "block", marginTop: "7px"}}><img
                                 src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVChTdZChSwRREMa/2VvBaDRcEU80GK4IFxXOy0aLsNe8pkHkgsly8YJRWMRqs8nB/QMWwWCxGYxGQXY/v7l97LLs3Q8eM/N9M+/xBsuYpTh9SXERyhpRiHXMrk1nnmI9KCWNAd1+otA1YPMPOC/UCukV80e0s8yelXa9JvAdt3hwdIYvrx2bPditnEOZ+5reCHoNeT/yPszwGoF8k9Bb1ewEr5fl/Iz6CZ4IjgprNTl5ORhiuvj0IMF9Dl4tnCXowhtv9rzckhHvIW0gr/x0OUBDJ6RNzHZDVg20YNsetYBfhQnJsW8naHseneoFoKO13cXkVj/h+HiISbzGHW1oqtMuuoB/nSxJYwHeGAwAAAAASUVORK5CYII="
                                 width="13px" height="13px" style={{float: "left"}}/><img
@@ -293,9 +298,9 @@ class AccountDepositWithdraw extends React.Component {
                 </div>
                 <div style={{float: "left", margin: "10px 20px", border: "1px solid rgb(187, 187, 187)", width: "300px", fontSize: "14px"}}>
                     <div style={{padding: "10px", fontSize: "14px"}}><img
-                        src="https://www.hellobts.com/static/image/dz-header.jpg" width="50px" height="50px"
-                        style={{float: "left"}}/>
-                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>白菜<span style={{float: "right", color: "red"}}>保证金12万元</span></div>
+                        src={avatar2} width="50px" height="50px"
+                        style={{float: "left", width: "50px", height: "50px"}}/>
+                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>白菜<span style={{float: "right", color: "red"}}>保证金45万元</span></div>
                             <div style={{display: "block", marginTop: "7px"}}><img
                                 src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVChTdZChSwRREMa/2VvBaDRcEU80GK4IFxXOy0aLsNe8pkHkgsly8YJRWMRqs8nB/QMWwWCxGYxGQXY/v7l97LLs3Q8eM/N9M+/xBsuYpTh9SXERyhpRiHXMrk1nnmI9KCWNAd1+otA1YPMPOC/UCukV80e0s8yelXa9JvAdt3hwdIYvrx2bPditnEOZ+5reCHoNeT/yPszwGoF8k9Bb1ewEr5fl/Iz6CZ4IjgprNTl5ORhiuvj0IMF9Dl4tnCXowhtv9rzckhHvIW0gr/x0OUBDJ6RNzHZDVg20YNsetYBfhQnJsW8naHseneoFoKO13cXkVj/h+HiISbzGHW1oqtMuuoB/nSxJYwHeGAwAAAAASUVORK5CYII="
                                 width="13px" height="13px" style={{float: "left"}}/><img
@@ -324,9 +329,9 @@ class AccountDepositWithdraw extends React.Component {
                 </div>
                 <div style={{float: "left", margin: "10px 20px", border: "1px solid rgb(187, 187, 187)", width: "300px", fontSize: "14px"}}>
                     <div style={{padding: "10px", fontSize: "14px"}}><img
-                        src="https://www.hellobts.com/static/image/dz-header.jpg" width="50px" height="50px"
-                        style={{float: "left"}}/>
-                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>嘿。你的益达！<span style={{float: "right", color: "red"}}>保证金10万元</span></div>
+                        src={avatar3} width="50px" height="50px"
+                        style={{float: "left", width: "50px", height: "50px"}}/>
+                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>嘿。你的益达！<span style={{float: "right", color: "red"}}>保证金30万元</span></div>
                             <div style={{display: "block", marginTop: "7px"}}><img
                                 src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVChTdZChSwRREMa/2VvBaDRcEU80GK4IFxXOy0aLsNe8pkHkgsly8YJRWMRqs8nB/QMWwWCxGYxGQXY/v7l97LLs3Q8eM/N9M+/xBsuYpTh9SXERyhpRiHXMrk1nnmI9KCWNAd1+otA1YPMPOC/UCukV80e0s8yelXa9JvAdt3hwdIYvrx2bPditnEOZ+5reCHoNeT/yPszwGoF8k9Bb1ewEr5fl/Iz6CZ4IjgprNTl5ORhiuvj0IMF9Dl4tnCXowhtv9rzckhHvIW0gr/x0OUBDJ6RNzHZDVg20YNsetYBfhQnJsW8naHseneoFoKO13cXkVj/h+HiISbzGHW1oqtMuuoB/nSxJYwHeGAwAAAAASUVORK5CYII="
                                 width="13px" height="13px" style={{float: "left"}}/><img
@@ -355,9 +360,9 @@ class AccountDepositWithdraw extends React.Component {
                 </div>
                 <div style={{float: "left", margin: "10px 20px", border: "1px solid rgb(187, 187, 187)", width: "300px", fontSize: "14px"}}>
                     <div style={{padding: "10px", fontSize: "14px"}}><img
-                        src="https://www.hellobts.com/static/image/dz-header.jpg" width="50px" height="50px"
-                        style={{float: "left"}}/>
-                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>点点<span style={{float: "right", color: "red"}}>保证金10万元</span></div>
+                        src={avatar4} width="50px" height="50px"
+                        style={{float: "left", width: "50px", height: "50px"}}/>
+                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>点点<span style={{float: "right", color: "red"}}>保证金20万元</span></div>
                             <div style={{display: "block", marginTop: "7px"}}><img
                                 src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVChTdZChSwRREMa/2VvBaDRcEU80GK4IFxXOy0aLsNe8pkHkgsly8YJRWMRqs8nB/QMWwWCxGYxGQXY/v7l97LLs3Q8eM/N9M+/xBsuYpTh9SXERyhpRiHXMrk1nnmI9KCWNAd1+otA1YPMPOC/UCukV80e0s8yelXa9JvAdt3hwdIYvrx2bPditnEOZ+5reCHoNeT/yPszwGoF8k9Bb1ewEr5fl/Iz6CZ4IjgprNTl5ORhiuvj0IMF9Dl4tnCXowhtv9rzckhHvIW0gr/x0OUBDJ6RNzHZDVg20YNsetYBfhQnJsW8naHseneoFoKO13cXkVj/h+HiISbzGHW1oqtMuuoB/nSxJYwHeGAwAAAAASUVORK5CYII="
                                 width="13px" height="13px" style={{float: "left"}}/><img
@@ -386,9 +391,9 @@ class AccountDepositWithdraw extends React.Component {
                 </div>
                 <div style={{float: "left", margin: "10px 20px", border: "1px solid rgb(187, 187, 187)", width: "300px", fontSize: "14px"}}>
                     <div style={{padding: "10px", fontSize: "14px"}}><img
-                        src="https://www.hellobts.com/static/image/dz-header.jpg" width="50px" height="50px"
-                        style={{float: "left"}}/>
-                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>勇敢的心<span style={{float: "right", color: "red"}}>保证金10万元</span></div>
+                        src={avatar5} width="50px" height="50px"
+                        style={{float: "left", width: "50px", height: "50px"}}/>
+                        <div style={{float: "left", marginLeft: "25px", width: "200px"}}><div style={{display: "block"}}>勇敢的心<span style={{float: "right", color: "red"}}>保证金20万元</span></div>
                             <div style={{display: "block", marginTop: "7px"}}><img
                                 src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVChTdZChSwRREMa/2VvBaDRcEU80GK4IFxXOy0aLsNe8pkHkgsly8YJRWMRqs8nB/QMWwWCxGYxGQXY/v7l97LLs3Q8eM/N9M+/xBsuYpTh9SXERyhpRiHXMrk1nnmI9KCWNAd1+otA1YPMPOC/UCukV80e0s8yelXa9JvAdt3hwdIYvrx2bPditnEOZ+5reCHoNeT/yPszwGoF8k9Bb1ewEr5fl/Iz6CZ4IjgprNTl5ORhiuvj0IMF9Dl4tnCXowhtv9rzckhHvIW0gr/x0OUBDJ6RNzHZDVg20YNsetYBfhQnJsW8naHseneoFoKO13cXkVj/h+HiISbzGHW1oqtMuuoB/nSxJYwHeGAwAAAAASUVORK5CYII="
                                 width="13px" height="13px" style={{float: "left"}}/><img

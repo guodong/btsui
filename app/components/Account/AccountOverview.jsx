@@ -519,7 +519,7 @@ class AccountOverview extends React.Component {
                 hide_asset
             />;
 
-        const preferredUnit = settings.get("unit") || "1.3.0";
+        const preferredUnit = "BTSVIP.BTC"; //settings.get("unit") || "1.3.0";
         const totalValueText = <TranslateWithLinks
             noLink
             string="account.total"
@@ -588,12 +588,9 @@ class AccountOverview extends React.Component {
                                             </th>
                                             {showAssetPercent ? <th style={{textAlign: "right"}}><Translate component="span" content="account.percent" /></th> : null}
                                             <th><Translate content="header.payments" /></th>
-                                            <th><Translate content="exchange.buy" /></th>
                                             <th><Translate content="modal.deposit.submit" /></th>
                                             <th><Translate content="modal.withdraw.submit" /></th>
                                             <th><Translate content="account.trade" /></th>
-                                            <th><Translate content="exchange.borrow" /></th>
-                                            <th><Translate content="account.settle" /></th>
                                             <th className="column-hide-small"><Translate content={!showHidden ? "exchange.hide" : "account.perm.show"} /></th>
                                         </tr>
                                     </thead>
