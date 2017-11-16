@@ -216,11 +216,11 @@ class AccountOverview extends React.Component {
             symbol = asset.get("symbol");
             if (symbol.indexOf("OPEN.") !== -1 && !market) market = "USD";
             let preferredMarket = market ? market : core_asset ? core_asset.get("symbol") : "BTSVIP.CNY";
-            let before = "BTSVIP.CNY";
-            let after = asset.get("symbol");
+            let after = "BTSVIP.CNY";
+            let before = asset.get("symbol");
 
             if (asset.get("symbol") == "BTSVIP.CNY") {
-                after = "CNY";
+                before = "CNY";
             }
             /* Table content */console.log(asset)
             directMarketLink = notCore ? <Link to={`/market/${before}_${after}`}><Icon name="trade" className="icon-14px" /></Link> : emptyCell;

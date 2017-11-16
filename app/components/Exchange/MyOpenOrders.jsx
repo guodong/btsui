@@ -75,6 +75,13 @@ class OrderRow extends React.Component {
         let amountSymbol = showSymbols ? " " + quote.get("symbol") : null;
         let preferredUnit = settings ? settings.get("unit") : "1.3.0";
 
+        let before = quote.get("symbol");
+        let after = "BTSVIP.CNY";
+
+      if (before == "BTSVIP.CNY") {
+        before = "CNY";
+      }
+
         return !dashboard ? (
             <tr key={order.id}>
                 <td className={tdClass} style={{paddingLeft: 10}}>
@@ -121,7 +128,7 @@ class OrderRow extends React.Component {
                         format="short"
                     />}
                 </td> */}
-                <td><Link to={`/market/${quote.get("symbol")}_${base.get("symbol")}`}><Icon name="trade" className="icon-14px" /></Link></td>
+                <td><Link to={`/market/${before}_${after}`}><Icon name="trade" className="icon-14px" /></Link></td>
                 {isMyAccount ? <td className="text-center" style={{ padding: "2px 5px"}}>
                     {isCall ? null : <a style={{marginRight: 0}} className="order-cancel" onClick={this.props.onCancel}>
                         <Icon name="cross-circle" className="icon-14px" />
