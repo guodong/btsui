@@ -211,14 +211,19 @@ class AccountOverview extends React.Component {
             if (!asset) return null;
 
             const assetName = asset.get("symbol");
-            const notCore = asset.get("id") !== "1.3.0";
+            const notCore = true;//asset.get("id") !== "1.3.0";
             let {market} = assetUtils.parseDescription(asset.getIn(["options", "description"]));
             symbol = asset.get("symbol");
             if (symbol.indexOf("OPEN.") !== -1 && !market) market = "USD";
-            let preferredMarket = market ? market : core_asset ? core_asset.get("symbol") : "BTS";
+            let preferredMarket = market ? market : core_asset ? core_asset.get("symbol") : "BTSVIP.CNY";
+            let before = "BTSVIP.CNY";
+            let after = asset.get("symbol");
 
-            /* Table content */
-            directMarketLink = notCore ? <Link to={`/market/${asset.get("symbol")}_${preferredMarket}`}><Icon name="trade" className="icon-14px" /></Link> : emptyCell;
+            if (asset.get("symbol") == "BTSVIP.CNY") {
+                after = "CNY";
+            }
+            /* Table content */console.log(asset)
+            directMarketLink = notCore ? <Link to={`/market/${before}_${after}`}><Icon name="trade" className="icon-14px" /></Link> : emptyCell;
             transferLink = <Link to={`/transfer?asset=${asset.get("id")}`}><Icon name="transfer" className="icon-14px" /></Link>;
 
             let {isBitAsset, borrowModal, borrowLink} = renderBorrow(asset, this.props.account);
@@ -265,14 +270,14 @@ class AccountOverview extends React.Component {
                     <td>
                         {transferLink}
                     </td>
-                    <td>
-                        {canBuy && this.props.isMyAccount ?
-                        <span>
-                            <a onClick={this._showDepositWithdraw.bind(this, "bridge_modal", assetName, false)}>
-                                <Icon name="dollar" className="icon-14px" />
-                            </a>
-                        </span> : emptyCell}
-                    </td>
+                    {/*<td>*/}
+                        {/*{canBuy && this.props.isMyAccount ?*/}
+                        {/*<span>*/}
+                            {/*<a onClick={this._showDepositWithdraw.bind(this, "bridge_modal", assetName, false)}>*/}
+                                {/*<Icon name="dollar" className="icon-14px" />*/}
+                            {/*</a>*/}
+                        {/*</span> : emptyCell}*/}
+                    {/*</td>*/}
                     <td>
                         {canDepositWithdraw && this.props.isMyAccount? (
                             <span>
@@ -294,12 +299,12 @@ class AccountOverview extends React.Component {
                     <td>
                         {directMarketLink}
                     </td>
-                    <td>
-                        {isBitAsset ? <div className="inline-block" data-place="bottom" data-tip={counterpart.translate("tooltip.borrow", {asset: symbol})}>{borrowLink}{borrowModal}</div> : emptyCell}
-                    </td>
-                    <td>
-                        {isBitAsset ? <div className="inline-block" data-place="bottom" data-tip={counterpart.translate("tooltip.settle", {asset: symbol})}>{settleLink}</div> : emptyCell}
-                    </td>
+                    {/*<td>*/}
+                        {/*{isBitAsset ? <div className="inline-block" data-place="bottom" data-tip={counterpart.translate("tooltip.borrow", {asset: symbol})}>{borrowLink}{borrowModal}</div> : emptyCell}*/}
+                    {/*</td>*/}
+                    {/*<td>*/}
+                        {/*{isBitAsset ? <div className="inline-block" data-place="bottom" data-tip={counterpart.translate("tooltip.settle", {asset: symbol})}>{settleLink}</div> : emptyCell}*/}
+                    {/*</td>*/}
                     <td style={{textAlign: "center"}} className="column-hide-small" data-place="bottom" data-tip={counterpart.translate("tooltip." + (includeAsset ? "hide_asset" : "show_asset"))}>
                         <a style={{marginRight: 0}} className={includeAsset ? "order-cancel" : "action-plus"} onClick={this._hideAsset.bind(this, asset_type, includeAsset)}>
                             <Icon name={includeAsset ? "cross-circle" : "plus-circle"} className="icon-14px" />
@@ -519,7 +524,7 @@ class AccountOverview extends React.Component {
                 hide_asset
             />;
 
-        const preferredUnit = "BTSVIP.BTC"; //settings.get("unit") || "1.3.0";
+        const preferredUnit = settings.get("unit") || "1.3.0";
         const totalValueText = <TranslateWithLinks
             noLink
             string="account.total"

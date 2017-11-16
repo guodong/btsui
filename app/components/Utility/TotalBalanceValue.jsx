@@ -221,7 +221,7 @@ TotalValue = BindToChainState(TotalValue, {keep_updating: true});
 
 class ValueStoreWrapper extends React.Component {
     render() {
-        let preferredUnit = "BTSVIP.BTC"; //this.props.settings.get("unit") || "1.3.0";
+        let preferredUnit = this.props.settings.get("unit") || "1.3.0";
 
         return <TotalValue {...this.props} toAsset={preferredUnit}/>;
     }

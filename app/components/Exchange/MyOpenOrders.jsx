@@ -18,7 +18,7 @@ class TableHeader extends React.Component {
 
     render() {
         let {baseSymbol, quoteSymbol, dashboard, isMyAccount, settings} = this.props;
-        let preferredUnit = "BTSVIP.BTC"; //settings ? settings.get("unit") : "1.3.0";
+        let preferredUnit = settings ? settings.get("unit") : "1.3.0";
 
         return !dashboard ? (
             <thead>

@@ -69,7 +69,7 @@ class MarketCard extends React.Component {
 
     _onError(imgName) {
         if (!this.state.imgError) {
-            this.refs[imgName.toLowerCase()].src = "asset-symbols/bts.png";
+            this.refs[imgName.toLowerCase()].src = "asset-symbols/otc.png";
             this.setState({
                 imgError: true
             });
@@ -87,7 +87,7 @@ class MarketCard extends React.Component {
             let imgName = asset.get("symbol").split(".");
             return imgName.length === 2 ? imgName[1] : imgName[0];
         }
-        let imgName = getImageName(base);
+        let imgName = getImageName(base);console.log(imgName)
 
         // let marketID = base.get("symbol") + "_" + quote.get("symbol");
         // let stats = marketStats;

@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
                 ["BTSVIP.CNY", "BTSVIP.OTC"],
                 ["BTSVIP.CNY", "BTSVIP.MUSE"],
                 ["BTSVIP.CNY", "BTS"],
-                ["BTSVIP.CNY", "bitCNY"],
+                ["BTSVIP.CNY", "CNY"],
                 ["BTSVIP.CNY", "BTSVIP.BTC"]
                 // ["USD", "BTS"],
                 // ["USD", "OPEN.BTC"],

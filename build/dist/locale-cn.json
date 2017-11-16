@@ -63,6 +63,8 @@
       "memo_tip": "You may include any message in the memo field. Memos are optional but generally required for transfers to exchanges."
   },
   "account": {
+    "total": "总计 ({asset})",
+    "eq_value_header": "市值 ({asset})",
     "new_user": "新用户",
     "existing_user": "已有账户",
     "deposit_address": "你的充值地址就是你的账户名",
@@ -926,7 +928,7 @@
     "zoom": "缩放",
     "zoom_all": "显示全部",
     "settings": "图表选项",
-    "featured": "热门市场",
+    "featured": "交易市场",
     "new": "新增",
     "market_frozen": "%(asset)s 资产发行人已禁用该资产的市场交易",
     "show_star_1": "显示",
@@ -1104,7 +1106,8 @@
     "understand_1": "我理解如果我忘记或丢失了密码，将没有任何人能够帮助我恢复",
     "understand_2": "我已经写下了或者用其它方式保存了我的密码",
     "understand_3": "我知道如果我的密码丢失，我将失去我的资金",
-    "bts_rules": "比特股法则第一条: 不要弄丢自己的密码。<br/>第二条法则: 不要弄丢自己的密码。<br />第三条法则: 没有人能帮你恢复。<br />第四条法则: 如果你仅凭脑力就能记住自己的密码，那通常来说它不够强。<br />第五条法则: 只用随机生成的密码。<br />第六条法则: 别告诉别人你的密码。<br />第七条法则: 总是备份你的密码。"
+    "bts_rules": "比特股法则第一条: 不要弄丢自己的密码。<br/>第二条法则: 不要弄丢自己的密码。<br />第三条法则: 没有人能帮你恢复。<br />第四条法则: 如果你仅凭脑力就能记住自己的密码，那通常来说它不够强。<br />第五条法则: 只用随机生成的密码。<br />第六条法则: 别告诉别人你的密码。<br />第七条法则: 总是备份你的密码。",
+    "ok_done": "我已备份密码，请带我去主页"
   },
   "borrow": {
     "title": "%(asset_symbol)s 保证金头寸",
